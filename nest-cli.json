@@ -24,7 +24,8 @@
   },
   "compilerOptions": {
     "webpack": true,
-    "tsConfigPath": "apps/nest-playground/tsconfig.app.json"
+    "tsConfigPath": "apps/nest-playground/tsconfig.app.json",
+    "webpackConfigPath": "webpack.config.js"
   },
   "monorepo": true,
   "root": "apps/nest-playground"
