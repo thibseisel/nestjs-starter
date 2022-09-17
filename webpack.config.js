@@ -10,4 +10,7 @@
  * @param {import("webpack")} webpack Whole webpack module.
  * @returns {WebpackConfiguration} Webpack configuration to be used.
  */
-module.exports = (defaults) => defaults
+module.exports = (defaults) => ({
+  ...defaults,
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
+})
