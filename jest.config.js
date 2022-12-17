@@ -1,3 +1,7 @@
+const { join } = require("path")
+const { pathsToModuleNameMapper } = require("ts-jest")
+const { baseUrl, paths } = require("./tsconfig.json").compilerOptions
+
 /**
  * @type import("jest").Config
  */
@@ -12,7 +16,7 @@ module.exports = {
   coverageDirectory: "./coverage",
   testEnvironment: "node",
   roots: ["<rootDir>/libs/", "<rootDir>/apps/"],
-  moduleNameMapper: {
-    "^@libs/core(|/.*)$": "<rootDir>/libs/core/src/$1",
-  },
+  moduleNameMapper: pathsToModuleNameMapper(paths, {
+    prefix: join("<rootDir>", baseUrl),
+  }),
 }
