@@ -25,7 +25,7 @@
   "compilerOptions": {
     "webpack": true,
     "tsConfigPath": "apps/my-app/tsconfig.app.json",
-    "webpackConfigPath": "webpack.config.js"
+    "webpackConfigPath": "webpack.config.ts"
   },
   "monorepo": true,
   "root": "apps/my-app"
