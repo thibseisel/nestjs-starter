@@ -8,6 +8,7 @@
   "search.exclude": {
     "**/node_modules": true,
     "**/*.code-search": true,
+    "**/coverage": true,
     "**/dist": true
   }
 }
