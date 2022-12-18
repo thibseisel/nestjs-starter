@@ -1,4 +1,10 @@
 {
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json",
+    "tsconfig.json": "tsconfig.*.json",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.ts": "${capture}.spec.ts"
+  },
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
