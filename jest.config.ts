@@ -1,11 +1,10 @@
-const { join } = require("path")
-const { pathsToModuleNameMapper } = require("ts-jest")
-const { baseUrl, paths } = require("./tsconfig.json").compilerOptions
+import { join } from "path"
+import { JestConfigWithTsJest, pathsToModuleNameMapper } from "ts-jest"
 
-/**
- * @type {import("ts-jest").JestConfigWithTsJest}
- */
-module.exports = {
+import * as tsconfig from "./tsconfig.json"
+const { baseUrl, paths } = tsconfig.compilerOptions
+
+const config: JestConfigWithTsJest = {
   moduleFileExtensions: ["js", "json", "ts"],
   rootDir: ".",
   testRegex: ".*\\.spec\\.ts$",
@@ -20,3 +19,4 @@ module.exports = {
     prefix: join("<rootDir>", baseUrl),
   }),
 }
+export default config

@@ -18,6 +18,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": false,
     "isolatedModules": true,
+    "resolveJsonModule": true,
     "paths": {
       "@libs/core": ["libs/core/src"],
       "@libs/testing": ["libs/testing/src"]
