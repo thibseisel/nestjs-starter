@@ -17,6 +17,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": false,
+    "isolatedModules": true,
     "paths": {
       "@libs/core": ["libs/core/src"],
       "@libs/testing": ["libs/testing/src"]
