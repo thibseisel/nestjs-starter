@@ -3,7 +3,7 @@ const { pathsToModuleNameMapper } = require("ts-jest")
 const { baseUrl, paths } = require("./tsconfig.json").compilerOptions
 
 /**
- * @type import("jest").Config
+ * @type {import("ts-jest").JestConfigWithTsJest}
  */
 module.exports = {
   moduleFileExtensions: ["js", "json", "ts"],
